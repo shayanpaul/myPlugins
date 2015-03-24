@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Photo Stack</title>
+</head>
+ 		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/photoStack.js"></script>
+		<script>
+			$(function(){
+				$(".container").cudeCarousal();
+			});
+</script>
+		
+<body>
+	<div class="container">
+		<div id="cube" style="transform:rotateX(0deg)">
+			<div class="front"><img src="images/1.jpg " width="600" height="300" /></div>
+			<div class="back"><img src="images/2.jpg " width="600" height="300" /></div>
+			<div class="right"><img src="images/3.png " width="600" height="300" /></div>
+			<div class="left"><img src="images/4.jpg " width="600" height="300" /></div>
+			<div class="top"><img src="images/5.jpg " width="600" height="300" /></div>
+			<div class="bottom"><img src="images/6.jpg " width="600" height="300" /></div>
+			
+		</div>
+	<a href="javascript:void(0);" id="prev" class=""></a>
+	<a href="javascript:void(0);" id="next" style="display: block;" class=""></a>		
+	</div>
+	
+</body>
+</html>

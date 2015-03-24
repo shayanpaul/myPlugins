@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Photo Stack</title>
+</head>
+ 		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/photoStack.js"></script>
+		<script>
+			$(function(){
+				$("#ps_albums").photoFlip();
+			});
+</script>
+		
+<body>
+	 
+	 <div class="photoFlip_container" id="photoFlip_container">
+		<a class="photoFlip_next_photo active" id="photoFlip_next_photo"></a>
+			<img src="./images/first.jpg" />
+			<img src="./images/second.jpg" />
+			<img src="./images/third.jpg"/>
+			<img src="./images/forth.jpg" />
+			<img src="./images/fifth.jpg" />
+			<img src="./images/sixth.jpg"/>
+			<img src="./images/7th.jpg"/>
+			<img src="./images/8th.jpg"/>
+			<img src="./images/9th.jpg"/>
+		</div>
+</body>
+</html>

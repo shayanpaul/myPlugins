@@ -1,0 +1,111 @@
+body{
+	/*overflow-x:hidden;*/
+}
+.innerWrapper div{
+	position:relative;
+	float:left;
+}
+.innerWrapper{
+	position: absolute;
+	width: 8820px;
+	height: 436px;
+}
+.photoStackWrapper{
+	 background: url("../images/header.png") repeat scroll 0 0 transparent;  
+    height: 436px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: start;
+    width: 980px;
+}
+.innerWrapper div > *{
+	position: absolute;
+}
+.innerWrapper div h5 {
+    color: #D3D2D3;
+    font-family: tahoma,arial,helvetica,serif;
+    font-size: 15px;
+    font-weight: normal;
+    left: 32px;
+    
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    top: 63px;
+    white-space: nowrap;
+}
+.innerWrapper div h3 {
+    color: #F5F5F5;
+    font-family: 'pt-sans',arial,helvetica,serif;
+    font-size: 68px;
+    font-weight: normal;
+    left: 32px;
+    letter-spacing: -5px;
+    line-height: 70px;
+    margin: 0 0 18px;
+    padding-bottom: 13px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    top: 103px;
+    width: 420px;
+}
+.innerWrapper div p {
+    color: #959697;
+    font-size: 14px;
+    left: 32px;
+    line-height: 26px;
+    margin: 0;
+    top: 181px;
+    width: 420px;
+	font-family: tahoma,arial,helvetica,serif;
+}
+.innerWrapper div img.img-back {
+    left: 498px;
+    top: 80px;
+    z-index: 2;
+}
+.innerWrapper div img.img-mid {
+    left: 572px;
+    top: 46px;
+    z-index: 3;
+}
+.innerWrapper div img.img-front {
+    left: 649px;
+    top: 0;
+    z-index: 4;
+}
+.innerWrapper div a.green-btn {
+    background: url("../images/green-btn.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 56px;
+    left: 32px;
+    line-height: 52px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    top: 308px;
+    width: 194px;
+}
+.innerWrapper> div {
+    height: 436px;
+    width: 980px;
+}
+#prev, #next {
+    background: url("../images/direction-nav.png") no-repeat scroll 0 0 transparent;
+    bottom: 15px;
+    display: block;
+    height: 22px;
+    position: absolute;
+    width: 17px;
+    z-index: 10;
+}
+#next {
+    background-position: right 0;
+    right: 434px;
+}
+#prev {
+    left: 426px;
+}

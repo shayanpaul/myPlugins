@@ -1,0 +1,24 @@
+.photoStackWrapper{
+	width:900px;
+	overflow:hidden;
+	 height: 525px;
+	  display: block;
+	  margin: 0 auto;
+	  position:relative;
+}
+img{
+	cursor : pointer;
+}
+.innerWrapper div{
+	margin-right:-650px;
+	float:left;
+}
+.innerWrapper{
+	 bottom: auto;
+    float: none;
+    height: 525px;
+    margin: 0;
+    position: absolute;
+    right: auto;
+    text-align: left;
+}

@@ -1,0 +1,91 @@
+body{
+	overflow:hidden;
+}
+.container{
+	height:300px;
+	width:600px;
+	margin: 100px auto;
+	perspective: 1000px;
+    position: relative;
+}
+#cube{
+	height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease 0s;
+    width: 100%;
+}
+#cube div{
+	display: block;
+	height:300px;
+	width:600px;
+	position: absolute;
+	font-size:120px;
+	text-align:center;
+}
+#cube .front {
+    transform: translateZ(300px);
+}
+#cube .back {
+    transform: rotateY(-540deg) translateZ(300px);
+}
+#cube .left {
+    transform: rotateY(-90deg) translateZ(300px);
+}
+#cube .right {
+    transform: rotateY(90deg) translateZ(300px);
+}
+#cube .top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+#cube .bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+/* need to remove*/
+#cube .right, #cube .left {
+	left: 0;
+}
+#cube .top, #cube .bottom {
+	/*left:-150px;*/
+	top:-150px;
+	width:600px;
+	height:600px;
+}
+#cube .bottom {
+    background: none repeat scroll 0 0 rgba(254, 0, 255, 0.7);
+}
+#cube .top {
+    background: none repeat scroll 0 0 rgba(0, 0, 255, 0.7);
+}
+#cube .left {
+    background: none repeat scroll 0 0 rgba(0, 255, 254, 0.7);
+}
+#cube .right {
+    background: none repeat scroll 0 0 rgba(0, 255, 0, 0.7);
+}
+#cube .back {
+    background: none repeat scroll 0 0 rgba(255, 255, 0, 0.7);
+}
+#cube .front {
+    background: none repeat scroll 0 0 rgba(255, 0, 0, 0.7);
+}
+/**/
+#prev, #next {
+    background: url("../images/direction-nav.png") no-repeat scroll 0 0 transparent;
+    bottom: 15px;
+    display: block;
+    height: 22px;
+    position: absolute;
+    width: 17px;
+    z-index: 10;
+}
+#next {
+    background-position: right 0;
+    right: -105px;
+	top: 145px;
+}
+#prev {
+    left: -105px;
+	top: 145px;
+}

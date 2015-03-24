@@ -1,0 +1,33 @@
+body{
+	overflow-x:hidden;
+}
+.photoFlip_container {
+    height: 350px;
+    left: 33%;
+    position: absolute;
+    top: 20%;
+    width: 480px;
+    z-index: 100;
+}
+.photoFlip_container img {
+    border: 10px solid #FFFFFF;
+    box-shadow: 1px 1px 10px #000000;
+    left: 0%;
+    position: absolute;
+    top: 0%;
+	width: 460px; 
+	height: 305px;
+}
+a.photoFlip_next_photo {
+    background: url("../images/next_photo.png") no-repeat scroll 50% 50% #000000;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    height: 56px;
+    left: 50%;
+    margin: -28px 0 0 -28px;
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    width: 56px;
+    z-index: 1000;
+}

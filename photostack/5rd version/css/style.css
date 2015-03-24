@@ -1,0 +1,58 @@
+.ps_slider {
+    height: 300px;
+    margin: 110px auto 0;
+    position: relative;
+    width: 900px;
+	/*overflow:hidden;*/
+	perspective:300px;
+	-webkit-perspective:300px;
+}
+.ps_slider a.next, .ps_slider a.prev {
+    cursor: pointer;
+    height: 39px;
+    background-image: url("../images/arrows.png");
+    width: 25px;
+	position:absolute;
+}
+.ps_slider a.prev {
+    left: 410px;
+    top: 200px;
+}
+
+.ps_slider a.next {
+    left: 547px;
+    top: 200px;
+    background-position: 25px 39px;
+}
+.ps_slider .ps_album {
+    /*background-color: #333333;*/
+    height: 150px;
+    left: -100px;
+    top: -35px;
+    transform: translate3d(0px, 0px, 170px);
+	-webkit-transform: translate3d(0px, 0px, 170px);
+    transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+    width: 200px;
+	backface-visibility: hidden;
+    position: absolute;
+	transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+	-webkit-transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.65, transparent),to(white));
+}
+body{
+	overflow-x:hidden;
+}
+#ps_albums{
+	position:absolute;
+	transform:translate3d(450px, 105px, -170px);
+	-webkit-transform:translate3d(450px, 105px, -170px);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+img{
+	cursor:pointer;
+}

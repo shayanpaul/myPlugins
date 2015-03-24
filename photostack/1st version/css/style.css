@@ -1,0 +1,45 @@
+.ps_slider {
+    height: 300px;
+    margin: 110px auto 0;
+    position: relative;
+    width: 845px;
+}
+.ps_slider a.next, .ps_slider a.prev {
+    background-color: #000000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #232323;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    height: 20px;
+    margin-top: -10px;
+    opacity: 0.6;
+    outline: medium none;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+.ps_slider a.prev {
+    background-image: url("../images/prev.png");
+    left: -30px;
+}
+
+.ps_slider a.next {
+    background-image: url("../images/next.png");
+    right: -30px;
+}
+.ps_slider .ps_album {
+    background-color: #333333;
+    border: 1px solid #444444;
+    box-shadow: 1px 1px 4px #000000;
+    cursor: pointer;
+    height: 310px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 140px;
+}
+body{
+	overflow-x:hidden;
+}
